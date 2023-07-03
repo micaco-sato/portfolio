@@ -1,0 +1,114 @@
+@charset "UTF-8";
+/* CSS Document */
+html {
+  font-size: 62.5%; /* 16px * 62.5% = 10px */
+  width: 100%;
+}
+body {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-weight: 500;
+  font-size: 1.6em;
+  line-height: 2.4rem;
+}
+section h2 {
+  font-size: 8.0rem;
+  font-family: "Quiche Flare", serif;
+}
+section h3 {
+  font-size: 2.4rem;
+}
+a:hover {
+  opacity: 0.5;
+}
+.none {
+  display: none;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box; 
+}
+
+.logo-pc {
+  width: 32px;
+  position: fixed;
+  left: 6%;
+  top: 40px;
+}
+.header-nav {
+  display: block;
+  text-align: right;
+  position: fixed;
+  right: 6%;
+  top: 40px;
+}
+.header-nav ul li {
+  display: inline-block;
+  margin-left: 40px;
+}
+.header-nav ul li a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #FFF;
+  font-family: "Quiche Flare", serif;
+}
+.header-content {
+  height: 100px;
+  background-color: #2D2D2D;
+}
+
+/*  */
+a span {
+  display: inline-block;
+}
+a:hover span {
+  transition: .6s;
+  -webkit-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+}
+a:hover span:nth-of-type(1) {
+  -webkit-transition-delay: .02s;
+  transition-delay: .02s;
+}
+a:hover span:nth-of-type(2) {
+  -webkit-transition-delay: .04s;
+  transition-delay: .04s;
+}
+a:hover span:nth-of-type(3) {
+  -webkit-transition-delay: .06s;
+  transition-delay: .06s;
+}
+a:hover span:nth-of-type(4) {
+  -webkit-transition-delay: .08s;
+  transition-delay: .08s;
+}
+a:hover span:nth-of-type(5) {
+  -webkit-transition-delay: .10s;
+  transition-delay: .10s;
+}
+a:hover span:nth-of-type(6) {
+  -webkit-transition-delay: .12s;
+  transition-delay: .12s;
+}
+/*  */
+
+
+.footer {
+  background-color: #2D2D2D;
+  height: 64px;
+  position: relative;
+  color: #FFF;
+  padding: 10px 80px;
+  }
+  .footer_copyright {
+  font-family: "Quiche Flare", serif;
+  font-size: 1.0rem;
+  }
+  .footer-sns_links ul {
+      display: flex;
+      justify-content: end;
+      list-style: none;
+      position: relative;
+      gap: 31px;
+  }
+
+
