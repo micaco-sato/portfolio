@@ -3,6 +3,13 @@
 /* CSS Document */
 @media screen and (max-width: 819px)  {
 
+    .main-visual {
+        height: 560px;
+        background-color: #2D2D2D;
+        text-align: center;
+        padding-top: 230px;
+    }
+
 
     .section-about {
         padding: 80px 25px;
