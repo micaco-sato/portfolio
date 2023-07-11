@@ -206,6 +206,7 @@
     
     .review-client_leftbox img {
         margin-right: 0;
+        line-height: 1.6;
     }
 
     /* ---------work----------------------------------------- */
@@ -261,7 +262,7 @@
         font-size: 2.0rem;
         }
     .work_information-design_title:before, .work_information-design_title:after {
-        width: 42px /* 線の長さ */;
+        width: 40px /* 線の長さ */;
     }
     .work_information-title {
         font-size: 18px;
@@ -271,7 +272,7 @@
         max-width: 547px;
     }
     .work__sub-image_second img {
-        width: 80%;
+        width: 100%;
     }
     .look-back {
         margin-inline: auto;
