@@ -18,24 +18,17 @@
     font-family: "Quiche Flare", serif;
     font-weight: 100;
 }
-/* .main-visual_portfolio {
+.main-visual_name {
+    padding-top: 140px;
     color: #fff;
-    font-size: 3.2rem;
+    font-size: 2.2rem;
     font-family: "Quiche Flare", serif;
     font-weight: 100;
-    position: relative;
-    top: 140px;
-    left: 20%;
+    line-height: 1.4;
+    margin: 0 auto;
+    max-width: 261px;
+    text-align: left;
 }
-.main-visual_Webdesigner {
-    color: #fff;
-    font-size: 3.2rem;
-    font-family: "Quiche Flare", serif;
-    font-weight: 100;
-    position: relative;
-    top: 160px;
-    left: 23%;
-} */
 
 /*about*/
 
