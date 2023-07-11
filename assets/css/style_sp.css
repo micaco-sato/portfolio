@@ -87,6 +87,7 @@
     .floatingContainer {
         background-image: url(../image/sp-images/profile-MIKAKO\ AOYAMA.png) , url(../image/sp-images/profile-AOYAMA.png);
         background-position: right 10% bottom 4% , top 6% left 10%;
+        background-size:contain
     }
     .profile__container {
         padding: 80px 25px;
