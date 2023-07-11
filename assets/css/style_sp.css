@@ -264,6 +264,9 @@
     .work_information-design_title:before, .work_information-design_title:after {
         width: 40px /* 線の長さ */;
     }
+    .work_information-description a {
+        font-size: 14px;
+    }
     .work_information-title {
         font-size: 18px;
     }
