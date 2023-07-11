@@ -429,6 +429,7 @@ padding: 500px 0;
     background-image: url(../image/pc-images/profile-MIKAKO\ AOYAMA.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
 }
 @media screen and (max-width: 1300px) {
     .floatingContainer {
