@@ -30,16 +30,16 @@ a:hover {
 
 .logo-pc {
   width: 32px;
-  position: fixed;
+  position: relative;
   left: 6%;
-  top: 40px;
+  top: 40%;
 }
 .header-nav {
   display: block;
   text-align: right;
-  position: fixed;
   right: 6%;
   top: 40px;
+  position: absolute;
 }
 .header-nav ul li {
   display: inline-block;
@@ -55,8 +55,153 @@ a:hover {
   height: 100px;
   background-color: #2D2D2D;
 }
+.sidemenu , .hamburger_menu {
+  display: none;
+}
 
-/*  */
+/* ハンバーガー */
+@media screen and (max-width: 819px) {
+
+  .sidemenu , .hamburger_menu {
+    display: block;
+  }
+  
+  .header-content {
+    height: 60px;
+  }
+  .header-nav {
+    display: none;
+  }
+  
+/*------------------------------------
+ヘッダー spハンバーガーメニュー ↓
+------------------------------------*/
+header .sp_nav {
+  text-align: center;
+}
+.sidemenu {
+  height: 100vh;
+  padding-top: 100px;
+  position: fixed;
+  right: -40%; /*メニュー幅*/
+  transition: all 0.6s;
+  top: 0;
+  width: 40%; /*メニュー幅*/
+  z-index: 2;
+  background-color: #2D2D2D;
+}
+.sidemenu nav ul li {
+  padding: 20px;
+}
+.hamburger {
+  cursor: pointer;
+  height: 60px;
+  position: absolute;
+  right: 30px;
+  top: -4px;
+  width: 60px;
+  z-index: 3;
+}
+.hamburger span {
+  background-color: #E2DCDC;
+  height: 3px;
+  left: 20px;
+  position: absolute;
+  transition: all 0.6s;
+  width: 30px;
+  border-radius: 15px;
+}
+.hamburger_linetop {
+  top: 20px;
+}
+.hamburger_linecenter {
+  top: 29px;
+}
+.hamburger_linebottom {
+  top: 38px;
+}
+.hamburger_menu {
+  position: absolute;
+    color: #E2DCDC;
+    top: 60%;
+    right: 20%;
+    font-family: "Quiche Flare", serif;
+    font-size: 10px;
+}
+.sidemenu nav ul li a {
+  color: #E2DCDC;
+  font-family: "Quiche Flare", serif;
+  text-decoration: none;
+  font-size: 22px;
+}
+.hamburger-sns_links ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.hamburger-sns_links {
+  padding: 20px;
+}
+/*------------------------------------
+メニュークリックした後 ↓
+------------------------------------*/
+.nav_open .sidemenu {
+  right: 0;
+}
+.nav_open .hamburger_linetop {
+  top: 26px;
+  transform: rotate(45deg);
+}
+.nav_open .hamburger_linecenter {
+  left: 50%;
+  width: 0;
+}
+.nav_open .hamburger_linebottom {
+  top: 26px;
+  transform: rotate(-45deg);
+}
+.nav_open .overlay {
+  opacity: 0.8;
+  visibility: visible;
+}
+/*------------------------------------
+メニュークリック後メニュー外の背景 ↓
+------------------------------------*/
+.overlay {
+  background-color: #000;
+  cursor: pointer;
+  height: 100vh;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  transition: all 0.6s;
+  visibility: hidden;
+  width: 100vw;
+  z-index: 1;
+}
+/*------------------------------------
+@media screen 1000px~999px ↓
+------------------------------------*/
+@media screen and (max-width: 1000px) {
+  .sp_no {
+    display: none;
+  }
+  .sidemenu {
+    right: -80%; /*メニュー幅*/
+    width: 80%; /*メニュー幅*/
+  }
+}
+@media screen and (min-width: 999px) {
+  .pc_no {
+    display: none;
+  }
+}
+
+}
+
+
+/*  PC用ヘッダー*/
 a span {
   display: inline-block;
 }
@@ -108,7 +253,34 @@ a:hover span:nth-of-type(6) {
       justify-content: end;
       list-style: none;
       position: relative;
-      gap: 31px;
+  }
+  .note-logo {
+    width: 50%;
+  }
+  .Twitter-logo {
+    width: 50%;
+  }
+
+  @media screen and (max-width: 819px) {
+    .footer-sns_links ul {
+      gap: 24px;
+  }
+  .Twitter-logo {
+    width: 16px;
+  }
+  .note-logo {
+    width: 30px;
+  }
+    .footer_copyright {
+      font-size: 0.6rem;
+  }
+  .footer {
+    background-color: #2D2D2D;
+    height: 64px;
+    position: relative;
+    color: #FFF;
+    padding: 10px 25px;
+  }
   }
 
 

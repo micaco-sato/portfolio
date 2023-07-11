@@ -9,43 +9,64 @@
   <link rel="stylesheet" href="https://use.typekit.net/ked2zom.css">
   <link rel="stylesheet" href="../assets/css/reset.css">
   <link rel="stylesheet" href="../assets/css/common.css">
-  <link rel="stylesheet" href="../assets/css/style_sp.css">
   <link rel="stylesheet" href="../assets/css/style.css">
-
-  <link rel="stylesheet" href="../css/style_v.css" media="screen" />
-
-  <link href="" rel="icon" type="image/x-icon" />
-  <link rel="apple-touch-icon" href="">
+  <link rel="stylesheet" href="../assets/css/style_sp.css">
+  <link href="../assets/image/pc-images/favicon.ico" rel="icon" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="../assets/image/pc-images/apple-touch-icon-180x180.png">
   <link rel="preload" href="" as="image">
   <link rel="preload" href="" as="image">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script src="../js/jquery.timelinr-0.9.7.js"></script>
-  <script>
-    $(function(){
-      $().timelinr({
-        orientation:  'vertical',
-        issuesSpeed:  300,
-        datesSpeed:   100,
-        arrowKeys:    'true',
-        startAt:      3
-      })
-    });
-  </script>
+
 
 </head>
 
 <body>
   <header class="header">
     <div class="header-content">
-      <a href=""><img class="logo-pc" src="../assets/image/pc-images/logo.png" alt="logo"></a>
+      <a href="../"><img class="logo-pc" src="../assets/image/pc-images/logo.png" alt="logo"></a>
+
+
+      <!-- spハンバーガーメニュー ↓ -->
+      <div class="sp_nav for-sp">
+        <div class="overlay for-sp" id="js_overlay"></div>
+        <div class="hamburger for-sp" id="js_hamburger">
+            <span class="hamburger_linetop"></span>
+            <span class="hamburger_linecenter"></span>
+            <span class="hamburger_linebottom"></span>
+            <p class="hamburger_menu">menu</p>
+        </div>
+        <div class="sidemenu for-sp">
+            <nav class="sidemenu_nav for-sp">
+                <ul>
+                    <li><a href="../">Home</a></li>
+                    <li><a href="../about/">About</a></li>
+                    <li><a href="../works/">Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger-sns_links for-sp">
+                <ul>
+                    <li class="sns_links-Twitter"><a href="https://twitter.com/iidodk" target="_blank"><img
+                                class="Twitter-logo" src="../assets/image/pc-images/Twitter logo.png"
+                                alt="twitter icon"></a></li>
+                    <li class="sns_links-note"><a href="https://note.com/micaco_a/" target="_blank"><img
+                                class="note-logo" src="../assets/image/pc-images/note-logo.png"
+                                alt="note icon"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- spハンバーガーメニュー ↑ -->
+
+
+
 
       <nav class="header-nav">
         <ul>
-          <li><a href="#"><span>A</span><span>b</span><span>o</span><span>u</span><span>t</span></a></li>
-          <li><a href="#"><span>W</span><span>o</span><span>r</span><span>k</span><span>s</span></a></li>
-          <li><a
-              href="#"><span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span></a>
+          <li><a href="../about/"><span>A</span><span>b</span><span>o</span><span>u</span><span>t</span></a></li>
+          <li><a href="../works/"><span>W</span><span>o</span><span>r</span><span>k</span><span>s</span></a></li>
+          <li><a href="#contact"><span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span></a>
           </li>
         </ul>
       </nav>
@@ -53,16 +74,16 @@
   </header>
 
   <main class="main">
-    <div class="floatingContainer">
+    <div class="floatingContainer"  id="area-1">
       <div class="floatingObject">
         <img class="floatingCard" src="../assets/image/pc-images/about-main-photo.png" alt="">
       </div>
     </div>
 
-    <div class="profile__container">
+    <div class="profile__container" id="area-2">
       <h3>青山 実華子</h3>
       <p class="section-profile_name">Mikako Aoyama</p>
-      <p class="profile__container-description">大学卒業後、営業職に6年ほど従事しておりました。<br>
+      <p class="profile__container-description">同志社女子大学卒業後、営業職に6年ほど従事しておりました。<br>
         仕事をする中で商品やサービスを提案するだけでなく、制作側になりたいと思いwebデザイナーに興味を持ちました。
         これまで培った、目達達成・情報整理・交渉力を活かし、自ら作り上げるデザインを通して、
         顧客に寄り添いながら目的や課題解決に導いていくデザイナーを目指しています。
@@ -71,92 +92,92 @@
 
 
     <!-- タイムライン -->
-    <div id="timeline">
-      <ul id="dates">
-        <li><a href="#1900" class="selected">1900</a></li>
-        <li><a href="#1930">1930</a></li>
-        <li><a href="#1944">1944</a></li>
-        <li><a href="#1950">1950</a></li>
-        <li><a href="#1971">1971</a></li>
-        <li><a href="#1977">1977</a></li>
-        <li><a href="#1989">1989</a></li>
-        <li><a href="#1999">1999</a></li>
-        <li><a href="#2001">2001</a></li>
-        <li><a href="#2011">2011</a></li>
-      </ul>
-      <ul id="issues">
-        <li id="1900" class="selected">
-          <img src="../assets/image/pc-images/1.png" width="256" height="256" />
-          <h1>1900</h1>
-          <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-        </li>
-        <li id="1930">
-          <img src="../assets/image/pc-images/1.png" width="256" height="256" />
-          <h1>1930</h1>
-          <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-        </li>
-        <li id="1944">
-          <img src="../assets/image/pc-images/1.png" width="256" height="256" />
-          <h1>1944</h1>
-          <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-        </li>
-        <li id="1950">
-          <img src="../assets/image/pc-images/1.png" width="256" height="256" />
-          <h1>1950</h1>
-          <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-        </li>
-        <li id="1971">
-          <img src="../assets/image/pc-images/1.png" width="256" height="256" />
-          <h1>1971</h1>
-          <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-        </li>
-        <li id="1977">
-          <img src="../assets/image/pc-images/1.png" width="256" height="256" />
-          <h1>1977</h1>
-          <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-        </li>
-        <li id="1989">
-          <img src="../assets/image/pc-images/1.png" width="256" height="256" />
-          <h1>1989</h1>
-          <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-        </li>
-        <li id="1999">
-          <img src="../assets/image/pc-images/1.png" width="256" height="256" />
-          <h1>1999</h1>
-          <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-        </li>
-        <li id="2001">
-          <img src="../assets/image/pc-images/1.png" width="256" height="256" />
-          <h1>2001</h1>
-          <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-        </li>
-        <li id="2011">
-          <img src="../assets/image/pc-images/1.png" width="256" height="256" />
-          <h1>2011</h1>
-          <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-        </li>
-      </ul>
-      <div id="grad_top"></div>
-      <div id="grad_bottom"></div>
-      <a href="#" id="next">+</a>
-      <a href="#" id="prev">-</a>
-    </div>
+    <div class="timeline-wrapper" id="area-3"><p class="timeline-wrapper_title">これまでの経験</p>
+    <ul class="timeline">
+      <li>
+        <p class="timeline-date">1993年4月</p>
+        <div class="timeline-content">
+          <h4>大阪府で生まれ、兵庫県で育つ</h4>
+        </div>
+      </li>
+      <li>
+        <p class="timeline-date">2016年3月</p>
+        <div class="timeline-content">
+          <h3>同志社女子大学 現代社会学部 社会システム学科 卒業</h3>
+        </div>
+      </li>
+      <li>
+        <p class="timeline-date">2016年4月</p>
+        <div class="timeline-content">
+          <h3>株式会社 京都銀行 総合職入社</h3>
+        </div>
+      </li>
+      <li>
+        <p class="timeline-date">2016年10月</p>
+        <div class="timeline-content">
+          <h4>窓口業務と後方事務を経て、預かり資産担当として外勤営業に励む</h4>
+        </div>
+      </li>
+      <li>
+        <p class="timeline-date">2018年10月</p>
+        <div class="timeline-content">
+          <h3>預かり資産営業部門で個人表彰を受賞</h3>
+        </div>
+      </li>
+      <li>
+        <p class="timeline-date">2019年8月</p>
+        <div class="timeline-content">
+          <h3>株式会社 レックス カスタマーコンシェルジュへ転職</h3>
+        </div>
+      </li>
+      <li>
+        <p class="timeline-date">2020年1月</p>
+        <div class="timeline-content">
+          <h4>営業の個人数字を伸ばし、教育担当とバックオフィス業務も兼任</h4>
+        </div>
+      </li>
+      <li>
+        <p class="timeline-date">2020年8月</p>
+        <div class="timeline-content">
+          <h3>社内評価 四半期MVPを獲得</h3>
+        </div>
+      </li>
+      <li>
+        <p class="timeline-date">2020年10月</p>
+        <div class="timeline-content">
+          <h3>社内評価 年間MVP1位を獲得</h3>
+        </div>
+      </li>
+      <li>
+        <p class="timeline-date">2022年4月</p>
+        <div class="timeline-content">
+          <h3>アシスタントマネージャーへ昇格</h3>
+        </div>
+      </li>
+      <li>
+        <p class="timeline-date">2023年1月</p>
+        <div class="timeline-content">
+          <h3>デジタルハリウッド webデザイン専攻 入学</h3>
+        </div>
+      </li>
+    </ul>
+  </div>
 
     <!-- 意識していること -->
-    <div class="conscious">
+    <div class="conscious" id="area-3">
       <p class="conscious-title">Web制作で意識していること</p>
       <div class="conscious-skill conscious-skill_first">
         <p class="conscious-skill_title">調査スキル</p>
-        <p class="conscious-skill_description">クライアント様からの要望をヒアリングした上で、希望のデザイン、雰囲気や構成を考えるための調査を妥協なく行います。
+        <p class="conscious-skill_description">クライアントからの要望をヒアリングし、希望の雰囲気やデザインの調査を妥協なく行います。
           ギャラリーサイトなど、常にトレンドのキャッチアップを意識して、業界問わず幅広く情報を収集します。
         </p>
         <p class="conscious-skill_description2">
-          web制作サイト全体の認識を合わせるために雰囲気や世界観の確認、掲載したい内容や商品の見せ方など、ヒアリングを通してご要望を引き出せる打ち合わせを意識しています。
-          そのため事前にクライアントの情報収集、業界や業種の分析調査、ギャラリーサイトで幅広く情報をキャッチアップし、提案の幅を広げます。具体的な内容はnotionを活用しながら、情報を整理させて打ち合わせに役立てています。
+          制作サイトの認識を合わせるために雰囲気や世界観の確認、掲載したい内容や商品の見せ方など、ヒアリングを通してご要望を引き出せる打ち合わせを意識しています。
+          そのため事前にクライアントの情報収集、業界や業種の分析調査、ギャラリーサイトで幅広く情報をキャッチアップし、提案の幅を広げます。具体的な内容はnotionを活用しながら、情報を整理させて打ち合わせに役立てました。
         </p>
-        <p class="conscious-skill_description3">notionリンク:<br>
-          クライアント：もなか様 (リンク)<br>
-          制作段階で提案させていただいた際に使用した資料になります。
+        <p class="conscious-skill_description3">notionリンク: <a href="https://www.notion.so/4-10-7d1dc4e434ce43edba4966461fccbbe4?pvs=4" target="_blank">https://www.notion.so/4-10-7d1dc4e434ce43edba4966461fccbbe4?pvs=4</a><br>
+          クライアント：もなか様 <a href="https://monakano-illust.com" target="_blank">(https://monakano-illust.com/)</a><br>
+          制作過程で使用した資料です。
         </p>
 
       </div>
@@ -169,23 +190,23 @@
           コーディングを意識して、ワイヤーとデザインを制作しつつ、使用したいアニメーションが出てきた段階で、すぐに調べてnotionに情報をまとめています。どのセクションで、どのぐらいの動きをつける予定か確認することで、機能面や見やすさに影響がないかの判断にもなります。また時間のかかる実装は、先にVS
           Codeで技術の確認をすることで、納品が間に合わないなどのトラブルを防いでいます。
         </p>
-        <p class="conscious-skill_description3">notionリンク:<br>
-          クライアント：もなか様 (リンク)<br>
-          制作段階で提案させていただいた際に使用した資料になります。
+        <p class="conscious-skill_description3">notionリンク: <a href="https://www.notion.so/JS-c85a66baa85c45c3bc2f1fcad542cc3d?pvs=4" target="_blank">https://www.notion.so/JS-c85a66baa85c45c3bc2f1fcad542cc3d?pvs=4</a><br>
+          クライアント：もなか様 <a href="https://monakano-illust.com" target="_blank">(https://monakano-illust.com/)</a><br>
+          制作過程で使用した資料です。
         </p>
       </div>
     </div>
 
     <!-- 口コミ -->
-    <div class="review">
-      <p class="review-title">クライアント様からの嬉しいコメント</p>
+    <div class="review" id="area-3">
+      <p class="review-title">クライアント様からいただいたコメント</p>
       <div class="review-client">
         <div class="review-client_leftbox">
           <img src="../assets/image/pc-images/review-client_monaka.png" alt="クライアントもなか様">
           <div class="client_leftbox">
             <p class="client_leftbox_title">もなか様/イラストレーター</p>
-            <p>もなかうぇぶさいと</p>
-            <p>URL:https://monaca-webXXXXXXXXXX</p>
+            <p class="client_leftbox_description">もなかうぇぶさいと</p>
+            <p class="client_leftbox_description"><a href="https://monakano-illust.com" target="_blank">URL : https://monakano-illust.com</a></p>
             <div class="client_leftbox-btn">
               <a class="btnlinestretches4" href="#">Work</a><a><img class="client_leftbox-btn_img"
                   src="../assets/image/pc-images/readmore-btn.png" alt="Read More button"></a>
@@ -201,7 +222,7 @@
           本当にありがとうございました！！
         </div>
       </div>
-      <div class="review-client">
+      <!-- <div class="review-client review-client_last">
         <div class="review-client_leftbox">
           <img src="../assets/image/pc-images/review-client_test.png" alt="クライアント様">
           <div class="client_leftbox">
@@ -220,24 +241,27 @@
           てすとてすとてすとてすとてすとてすとてすとてすとてすとてすとてすとてすとてすとてすとてすとてすと
           てすとてすとてすとてすとてすとてすとてすとてすとてすとてすとてすとてすとてすとてすとてすとてすと
         </div>
-      </div>
+      </div> -->
 
     </div>
   </main>
 
   <footer class="footer">
+    <p class="js-scroll scroll-top scrollview"><a href="#area-2">Scroll</a></p>
+    <p class="js-pagetop scroll-top"><a href="#">Page Top</a></p>
     <div class="footer-sns_links">
       <ul>
-        <li><a href="" target="_blank"><img src="../assets/image/pc-images/Twitter logo.png" alt="twitter icon"></a>
+        <li><a href="https://twitter.com/iidodk" target="_blank"><img class="Twitter-logo" src="../assets/image/pc-images/Twitter logo.png" alt="twitter icon"></a>
         </li>
-        <li class="sns_links-instagram"><a href="" target="_blank"><img src="../assets/image/pc-images/note-logo.png"
+        <li class="sns_links-note"><a href="https://note.com/micaco_a" target="_blank"><img class="note-logo" src="../assets/image/pc-images/note-logo.png"
               alt="note icon"></a></li>
       </ul>
     </div>
     <small class="footer_copyright">All Rights Reserved 2023 ©︎ Mikako Aoyama</small>
   </footer>
 
-  <script src="../assets/js/about.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="../assets/js/common.js"></script>
 
 
 </body>

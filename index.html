@@ -10,10 +10,10 @@
   <link rel="stylesheet" href="https://use.typekit.net/ked2zom.css">
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/common.css">
-  <link rel="stylesheet" href="assets/css/style_sp.css">
   <link rel="stylesheet" href="assets/css/style.css">
-  <link href="" rel="icon" type="image/x-icon" />
-  <link rel="apple-touch-icon" href="">
+  <link rel="stylesheet" href="assets/css/style_sp.css">
+  <link href="assets/image/pc-images/favicon.ico" rel="icon" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="assets/image/pc-images/apple-touch-icon-180x180.png">
   <link rel="preload" href="" as="image">
   <link rel="preload" href="" as="image">
 
@@ -24,13 +24,45 @@
 <body>
     <header class="header">
         <div class="header-content">
-        <a href=""><img class="logo-pc" src="assets/image/pc-images/logo.png" alt="logo"></a>
+        <a href="/"><img class="logo-pc" src="assets/image/pc-images/logo.png" alt="logo"></a>
+
+        <!-- spハンバーガーメニュー ↓ -->
+      <div class="sp_nav for-sp">
+        <div class="overlay for-sp" id="js_overlay"></div>
+        <div class="hamburger for-sp" id="js_hamburger">
+            <span class="hamburger_linetop"></span>
+            <span class="hamburger_linecenter"></span>
+            <span class="hamburger_linebottom"></span>
+            <p class="hamburger_menu">menu</p>
+        </div>
+        <div class="sidemenu for-sp">
+            <nav class="sidemenu_nav for-sp">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/works/">Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger-sns_links for-sp">
+                <ul>
+                    <li class="sns_links-Twitter"><a href="https://twitter.com/iidodk" target="_blank"><img
+                                class="Twitter-logo" src="assets/image/pc-images/Twitter logo.png"
+                                alt="twitter icon"></a></li>
+                    <li class="sns_links-note"><a href="https://note.com/micaco_a/" target="_blank"><img
+                                class="note-logo" src="assets/image/pc-images/note-logo.png"
+                                alt="note icon"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- spハンバーガーメニュー ↑ -->
         
         <nav class="header-nav">
           <ul>
-            <li><a href="#"><span>A</span><span>b</span><span>o</span><span>u</span><span>t</span></a></li>
-            <li><a href="#"><span>W</span><span>o</span><span>r</span><span>k</span><span>s</span></a></li>
-            <li><a href="#"><span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span></a></li>
+            <li><a href="/about/"><span>A</span><span>b</span><span>o</span><span>u</span><span>t</span></a></li>
+            <li><a href="/works/"><span>W</span><span>o</span><span>r</span><span>k</span><span>s</span></a></li>
+            <li><a href="#contact"><span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span></a></li>
           </ul>
         </nav>
 
@@ -39,16 +71,21 @@
     
       <main class="main">
         <div class="main-visual">
+            <div class="main-visual_title">Mikako Aoyama</div>
+            <div class="main-visual_name">
+                 <p class="main-visual_portfolio">Portfolio</p>
+                 <p class="main-visual_Webdesigner">Web designer</p>
+            </div>
         </div>
 
         <section class="section-about">
-            <h2>About</h2>
+            <h2 class="box fadeInTrigger" id="area-2">About</h2>
             <div class="section-about_flex">
                 <img src="assets/image/pc-images/section-about_mikakoaoyama.png" alt="Mikako Aoyama">
                 <div class="section-about_flex-box">
                     <h3>青山 実華子</h3><p class="section-about_flex-box-name">Mikako Aoyama</p>
-                    <p class="section-about_flex-box-description">大学卒業後、営業職に6年程従事。<br>
-                        仕事をする中で、商品や価値を提案するだけでなく、自分で手を動かして何かを生み出し、
+                    <p class="section-about_flex-box-description">同志社女子大学卒業後、営業職に6年程従事。<br>
+                        仕事をする中で、商品や価値を提案するだけでなく、自分の手で何かを生み出し、
                         サービスを提供できるようになりたいと思い、Webデザイナーへの道を志す。<br>
                         2023年1月~デジタルハリウッドにてWebデザインの勉強中。
                     </p>
@@ -60,15 +97,16 @@
         </section> 
             <div class="wrapper">
                 <ul class="slider">
-                    <li><img src="assets/image/pc-images/MIKAKO AOYMA.png" alt=""></li>
-                    <li><img src="assets/image/pc-images/MIKAKO AOYMA.png" alt=""></li>
-                    <li><img src="assets/image/pc-images/MIKAKO AOYMA.png" alt=""></li>
-                    <li><img src="assets/image/pc-images/MIKAKO AOYMA.png" alt=""></li>
+                    <li><img src="assets/image/pc-images/MIKAKO AOYAMA.png" alt=""></li>
+                    <li><img src="assets/image/pc-images/MIKAKO AOYAMA.png" alt=""></li>
+                    <li><img src="assets/image/pc-images/MIKAKO AOYAMA.png" alt=""></li>
+                    <li><img src="assets/image/pc-images/MIKAKO AOYAMA.png" alt=""></li>
                 </ul>
             </div>
+        <div class="second-box">
         <section class="section-works">
-            <h2>Works</h2>
-            <div class="section-works_flex">
+            <h2 class="box fadeInTrigger" id="area-3">Works</h2>
+            <div class="section-works_flex section-works_flex-last">
                 <img src="assets/image/pc-images/section-works_monaka.png" alt="monaka official website mock-upimage">
                 <div class="section-works_flex-box">
                     <h3>もなか 様<br>official web site</h3>
@@ -80,7 +118,7 @@
                     </div>
                 </div>
             </div>
-            <div class="section-works_flex">
+            <!-- <div class="section-works_flex">
                 <img src="assets/image/pc-images/section-works_test.png" alt="">
                 <div class="section-works_flex-box">
                     <h3>てすと 様<br>official web site</h3>
@@ -103,24 +141,27 @@
                         <a class="btnlinestretches4" href="#">Read More</a><a><img src="assets/image/pc-images/readmore-btn.png" alt="Read More button"></a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </section>   
-        <section class="section-contact">
-            <h2>Contact</h2>
+        <section class="section-contact" id="contact">
+            <h2 class="box fadeInTrigger">Contact</h2>
             <div class="contact-btn">
                 <a class="btnlinestretches5" href="#">Contact mail</a><a><img src="assets/image/pc-images/contact-mail_btn.png" alt="contact mail button"></a>
             </div>
         </section> 
+    </div>
                 
 
       </main>
 
       <footer class="footer">
+        <p class="js-scroll scroll-top scrollview"><a href="#area-2">Scroll</a></p>
+        <p class="js-pagetop scroll-top"><a href="#">Page Top</a></p>
         <div class="footer-sns_links">
             <ul>
-                <li><a href="" target="_blank"><img
+                <li><a href="https://twitter.com/iidodk" target="_blank"><img class="Twitter-logo"
                     src="assets/image/pc-images/Twitter logo.png" alt="twitter icon"></a></li>
-                <li class="sns_links-instagram"><a href="" target="_blank"><img
+                <li class="sns_links-note"><a href="https://note.com/micaco_a" target="_blank"><img class="note-logo"
                     src="assets/image/pc-images/note-logo.png" alt="note icon"></a></li>
             </ul>
         </div>
@@ -129,6 +170,7 @@
 
       <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <script src="assets/js/common.js"></script>
       <script src="assets/js/top.js"></script>
       
 
