@@ -61,6 +61,9 @@ a:hover {
 
 /* ハンバーガー */
 @media screen and (max-width: 819px) {
+  .logo-pc {
+    top: 30px;
+  }
 
   .sidemenu , .hamburger_menu {
     display: block;
