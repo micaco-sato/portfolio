@@ -17,6 +17,10 @@
     position: relative;
 }
 
+.container>canvas {
+    width: 100% !important;
+}
+
 .main-visual_title {
     color: #fff;
     font-size: 3.6rem;
