@@ -175,7 +175,7 @@
             camera.position.z = 300;
 
             scene = new THREE.Scene();
-            scene.background = new THREE.Color(0x050505);
+            scene.background = new THREE.Color("#2d2d2d");
 
             uniforms = {
 
@@ -251,7 +251,7 @@
 
         function render() {
 
-            const time = Date.now() * 0.01;
+            const time = Date.now() * 0.001;
 
             sphere.rotation.y = sphere.rotation.z = 0.01 * time;
 
