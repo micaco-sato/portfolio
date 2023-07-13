@@ -4,12 +4,34 @@
 @media screen and (max-width: 819px) {
 
     .main-visual {
-        height: 500px;
-        background-color: #2D2D2D;
-        text-align: center;
-        padding-top: 220px;
+        /* margin: 0; */
+        position: absolute;
+        top: 50%;
+        transform: translate(100%, -50%)
     }
-
+    
+    .container {
+        position: relative;
+    }
+    
+    .main-visual_title {
+        color: #fff;
+        font-size: 3.6rem;
+        font-family: "Quiche Flare", serif;
+        font-weight: 100;
+    }
+    
+    .main-visual_name {
+        color: #fff;
+        font-size: 2.2rem;
+        font-family: "Quiche Flare", serif;
+        font-weight: 100;
+        line-height: 1.4;
+        margin: 0 auto;
+        max-width: 261px;
+        text-align: left;
+    }
+    
 
     .section-about {
         padding: 80px 25px;
