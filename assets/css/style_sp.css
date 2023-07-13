@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /* CSS Document */
-@media screen and (max-width: 819px)  {
+@media screen and (max-width: 819px) {
 
     .main-visual {
         height: 500px;
@@ -14,25 +14,31 @@
     .section-about {
         padding: 80px 25px;
     }
-      .section-about h2 {
+
+    .section-about h2 {
         font-size: 4.8rem;
         margin-bottom: 48px;
-      }
+    }
+
     .section-about_flex-box h3 {
         text-align: center;
         font-size: 1.6rem;
     }
+
     .section-about_flex-box-name {
         text-align: center;
         font-size: 1.1rem;
         margin-bottom: 24px;
     }
+
     .section-about_flex-box-description {
         font-size: 1.4rem;
     }
+
     .readmore-btn {
         margin-top: 24px;
     }
+
     .wrapper {
         padding: 32px 0;
     }
@@ -41,38 +47,48 @@
     .section-works {
         padding: 80px 25px;
     }
+
     .section-works h2 {
         margin-bottom: 48px;
         font-size: 4.8rem;
     }
+
     .section-works_flex-box h3 {
         margin-bottom: 16px;
         margin-top: 24px;
         font-size: 1.6rem;
     }
+
     .section-works_flex-box_description {
         font-size: 1.6rem;
         margin-bottom: 16px;
     }
+
     .section-works_flex-box_charge {
         font-size: 1.4rem;
     }
+
     .section-works_flex {
         margin-bottom: 48px;
     }
+
     .section-works_flex img {
         width: 100%;
     }
+
     .section-works_flex-last {
         margin-bottom: 0px;
     }
+
     .section-contact {
         padding: 80px 25px;
     }
+
     .section-contact h2 {
         margin-bottom: 24px;
         font-size: 4.8rem;
     }
+
     .btnlinestretches5 {
         padding: 10px 10px 10px 0px;
     }
@@ -84,23 +100,28 @@
         width: 400px;
         height: auto;
     }
+
     .floatingContainer {
-        background-image: url(../image/sp-images/profile-MIKAKO\ AOYAMA.png) , url(../image/sp-images/profile-AOYAMA.png);
-        background-position: right 10% bottom 4% , top 6% left 10%;
-        background-size:contain
+        background-image: url(../image/sp-images/profile-MIKAKO\ AOYAMA.png), url(../image/sp-images/profile-AOYAMA.png);
+        background-position: right 10% bottom 4%, top 6% left 10%;
+        background-size: contain
     }
+
     .profile__container {
         padding: 80px 25px;
         text-align: left;
     }
+
     .profile__container h3 {
         text-align: center;
         font-size: 1.8rem;
     }
+
     .section-profile_name {
         font-size: 1.1rem;
         text-align: center;
     }
+
     .profile__container-description {
         font-size: 1.4rem;
         line-height: 2.8rem;
@@ -110,6 +131,7 @@
     .timeline-wrapper {
         padding: 80px 25px;
     }
+
     .timeline-wrapper_title {
         text-align: center;
         margin-bottom: 48px;
@@ -118,49 +140,61 @@
         background-repeat: no-repeat;
         background-position: center;
     }
+
     .timeline {
         text-align: left;
         list-style: none;
         display: block;
         margin: 0 auto;
     }
-    .timeline > li {
+
+    .timeline>li {
         margin-bottom: 24px;
     }
-    .timeline-content h3 , .timeline-content h4 {
+
+    .timeline-content h3,
+    .timeline-content h4 {
         font-weight: 500;
     }
+
     .timeline-date {
         font-size: 1.4rem;
     }
-   
+
 
 
     /* --意識していること--- */
     .conscious {
         padding-top: 80px;
     }
+
     .conscious-title {
         padding-bottom: 48px;
         font-size: 2.2rem;
     }
+
     .conscious-skill {
         padding: 40px 25px;
     }
+
     .conscious-skill_first {
         margin-bottom: 48px;
     }
+
     .conscious-skill_title {
         font-size: 1.9rem;
     }
+
     .conscious-skill_description {
         font-size: 1.6rem;
         padding-bottom: 24px;
     }
+
     .conscious-skill_description2 {
         font-size: 1.4rem;
         padding-bottom: 24px;
     }
+
     .conscious-skill_description3 {
         font-size: 1.3rem;
     }
@@ -169,41 +203,49 @@
     .review {
         padding: 80px 25px;
     }
+
     .review-title {
         padding-bottom: 48px;
         font-size: 1.8rem;
     }
+
     .review-client_leftbox {
         flex-direction: column;
         align-items: center;
         margin-top: 32px;
     }
+
     .review-client_leftbox img {
         margin-left: 0;
     }
+
     .client_leftbox_title {
         font-size: 1.6rem;
         margin: 16px 0 8px;
     }
+
     .client_leftbox_description {
         font-size: 1.4rem;
     }
+
     .client_leftbox-btn {
         margin-top: 16px;
     }
+
     .review-client_rightbox {
         max-width: 325px;
         margin: 32px auto 0;
         padding: 0 10px;
         font-size: 1.4rem;
     }
+
     .review-client {
         padding-bottom: 48px;
         padding-top: 0;
         display: block;
         margin-bottom: 0;
     }
-    
+
     .review-client_leftbox img {
         margin-right: 0;
         line-height: 1.6;
@@ -214,73 +256,97 @@
     .section-work {
         padding: 80px 25px;
     }
+
     .top-description_title {
         font-weight: 600;
     }
+
     .section-work_top-contents {
         text-align: left;
     }
+
     .section-work_top {
         margin: 0 auto 48px;
     }
+
     @media screen and (max-width: 550px) {
-    .section-work_top img {
-        max-width: 320px;
-        height: auto;
+        .section-work_top img {
+            max-width: 320px;
+            height: auto;
+        }
     }
-    }
+
     .work_process {
         padding: 80px 25px;
     }
-    .work_process-title, .work_process-detail_section {
+
+    .work_process-title,
+    .work_process-detail_section {
         font-size: 18px;
     }
+
     .work_process-description {
         font-size: 16px;
     }
-    .work_process-detail1  {
+
+    .work_process-detail1 {
         display: block;
     }
+
     .work_process-detail1_title {
         width: 100%;
         font-size: 16px;
         margin-bottom: 8px;
     }
+
     .work_process-detail1_description {
         width: 100%;
         margin-bottom: 48px;
     }
+
     .work_information-design {
         padding-top: 64px;
     }
+
     .work_information-design_title {
         font-size: 22px;
     }
+
     a.btn_12 {
         width: 160px;
         padding: 1rem 2rem 1rem 2rem;
         font-size: 2.0rem;
-        }
-    .work_information-design_title:before, .work_information-design_title:after {
-        width: 40px /* 線の長さ */;
     }
+
+    .work_information-design_title:before,
+    .work_information-design_title:after {
+        width: 40px
+            /* 線の長さ */
+        ;
+    }
+
     .work_information-description a {
         font-size: 14px;
     }
+
     .work_information-title {
         font-size: 18px;
     }
+
     .work_information-description img {
         width: 100%;
         max-width: 547px;
     }
+
     .work__sub-image_second img {
         width: 100%;
     }
+
     .look-back {
         margin-inline: auto;
         padding: 80px 25px;
     }
+
     .others {
         padding: 80px 25px;
     }

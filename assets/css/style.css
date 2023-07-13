@@ -8,12 +8,13 @@
 
 .main-visual {
     /* margin: 0; */
-    position: absolute;              
-    top: 50%;                         
-    transform: translate(100%, -50%) 
+    position: absolute;
+    top: 50%;
+    transform: translate(100%, -50%)
 }
+
 .container {
-  position: relative;
+    position: relative;
 }
 
 .main-visual_title {
@@ -162,29 +163,29 @@
 /* fadeUp */
 
 /* その場で */
-.fadeIn{
-    animation-name:fadeInAnime;
-    animation-duration:1s;
-    animation-fill-mode:forwards;
-    opacity:0;
-    }
-    
-    @keyframes fadeInAnime{
-      from {
+.fadeIn {
+    animation-name: fadeInAnime;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInAnime {
+    from {
         opacity: 0;
-      }
-    
-      to {
+    }
+
+    to {
         opacity: 1;
-      }
     }
-    
-    
-    /* スクロールをしたら出現する要素にはじめに透過0を指定　*/
-     
-    .fadeUpTrigger{
-        opacity: 0;
-    }
+}
+
+
+/* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+
+.fadeUpTrigger {
+    opacity: 0;
+}
 
 
 /*works*/
@@ -220,11 +221,13 @@
     margin-bottom: 14px;
     margin-top: 32px;
 }
+
 .section-works_flex-box_description {
     font-size: 2.0rem;
     line-height: 1.4;
     margin-bottom: 32px;
 }
+
 .readmore-btn {
     display: flex;
     justify-content: end;
@@ -235,11 +238,12 @@
     background-color: transparent;
     color: #333;
 }
+
 /* iPad */
-@media screen and (max-width: 1251px)  {
+@media screen and (max-width: 1251px) {
     .readmore-btn {
         margin-top: 32px;
-    }   
+    }
 }
 
 .readmore-btn a {
@@ -317,57 +321,66 @@
 
 /*スクロールリンクの形状*/
 .scroll-top {
-	/*表示位置*/
-	position: fixed;
-	right: 20px;
-	bottom: 10px;
-	z-index: 2;
-	/*はじめは非表示*/
-	opacity: 0;
-	visibility: hidden; 
-	transition: opacity .5s, visibility .5s; /*それぞれに0.5秒の変化のアニメーション*/
-	/*縦書き*/
-	-webkit-writing-mode: vertical-rl;
+    /*表示位置*/
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    z-index: 2;
+    /*はじめは非表示*/
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s, visibility .5s;
+    /*それぞれに0.5秒の変化のアニメーション*/
+    /*縦書き*/
+    -webkit-writing-mode: vertical-rl;
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
-	/*改行禁止*/
+    /*改行禁止*/
     white-space: nowrap;
-	/*矢印の動き*/
-	animation: arrowmove 1s ease-in-out infinite;
+    /*矢印の動き*/
+    animation: arrowmove 1s ease-in-out infinite;
 }
 
-@keyframes arrowmove{
-      0%{bottom:20px;}
-      50%{bottom:25px;}
-     100%{bottom:20px;}
- }
+@keyframes arrowmove {
+    0% {
+        bottom: 20px;
+    }
+
+    50% {
+        bottom: 25px;
+    }
+
+    100% {
+        bottom: 20px;
+    }
+}
 
 
 /*.scroll-viewクラスがついたら出現*/
 .scroll-top.scroll-view {
-	opacity: 1;
-	visibility: visible;
+    opacity: 1;
+    visibility: visible;
 }
 
 /*リンク全体の aタグの形状*/
 .scroll-top a {
-	text-decoration: none;
-	color: #666;
-	text-transform: uppercase;
-	font-size:0.9rem;
+    text-decoration: none;
+    color: #666;
+    text-transform: uppercase;
+    font-size: 0.9rem;
     display: block;
 }
 
 /*スクロールリンクの形状*/
 
-.js-scroll a::after{
-	content:"";
-	position: absolute;
-	top:0;
-	right:0;
-	width:1px;
-	height: 50px;
-	background:#666;
+.js-scroll a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 50px;
+    background: #666;
 }
 
 .js-scroll a::before {
@@ -382,20 +395,21 @@
 }
 
 /*Edge IE11 hack*/
-_:-ms-lang(x), .js-scroll a::before{
-	right:-11px;
+_:-ms-lang(x),
+.js-scroll a::before {
+    right: -11px;
 }
 
 /*ページトップリンクの形状*/
 
-.js-pagetop a::after{
-	content:"";
-	position: absolute;
-	top:0;
-	right:0;
-	width:1px;
-	height: 50px;
-	background:#666;
+.js-pagetop a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 50px;
+    background: #666;
 }
 
 .js-pagetop a::before {
@@ -410,13 +424,14 @@ _:-ms-lang(x), .js-scroll a::before{
 }
 
 /*Edge IE11 hack*/
-_:-ms-lang(x), .js-pagetop a::before{
-	right:0;
+_:-ms-lang(x),
+.js-pagetop a::before {
+    right: 0;
 }
 
 /*検証のためのCSS*/
-section{
-padding: 500px 0;
+section {
+    padding: 500px 0;
 }
 
 
@@ -432,6 +447,7 @@ padding: 500px 0;
     background-position: center;
     background-size: contain;
 }
+
 @media screen and (max-width: 1300px) {
     .floatingContainer {
         background-image: url(../image/pc-images/ipad_profile-MIKAKO\ AOYAMA.png);
@@ -496,6 +512,7 @@ padding: 500px 0;
     background-color: #000;
     color: #fff;
 }
+
 .timeline-wrapper_title {
     text-align: center;
     padding-bottom: 64px;
@@ -511,46 +528,51 @@ padding: 500px 0;
     text-align: center;
     max-width: 717px;
     margin: 0 auto;
-  }
-  .timeline > li {
+}
+
+.timeline>li {
     margin-bottom: 60px;
-  }
-  
-  /* for Desktop */
-  @media ( min-width : 640px ){
-    .timeline > li {
-      overflow: hidden;
-      margin: 0;
-      position: relative;
+}
+
+/* for Desktop */
+@media (min-width : 640px) {
+    .timeline>li {
+        overflow: hidden;
+        margin: 0;
+        position: relative;
     }
+
     .timeline-date {
-      width: 110px;
-      float: left;
-      margin-top: 20px;
+        width: 110px;
+        float: left;
+        margin-top: 20px;
     }
+
     .timeline-content {
-      width: 75%;
-      float: left;
-      border-left: 3px #e5e5d1 solid;
-      padding-left: 56px;
-      text-align: left;
-      font-size: 18px;
+        width: 75%;
+        float: left;
+        border-left: 3px #e5e5d1 solid;
+        padding-left: 56px;
+        text-align: left;
+        font-size: 18px;
     }
+
     .timeline-content h4 {
         font-weight: 500;
         font-size: 14px;
     }
+
     .timeline-content:before {
-      content: '';
-      width: 12px;
-      height: 12px;
-      background: #AFABA6;
-      position: absolute;
-      left: 106px;
-      top: 24px;
-      border-radius: 100%;
+        content: '';
+        width: 12px;
+        height: 12px;
+        background: #AFABA6;
+        position: absolute;
+        left: 106px;
+        top: 24px;
+        border-radius: 100%;
     }
-  }
+}
 
 /* けいれきここまで */
 
@@ -558,6 +580,7 @@ padding: 500px 0;
 .conscious {
     padding-top: 120px;
 }
+
 .conscious-title {
     padding-bottom: 64px;
     font-size: 3.2rem;
@@ -567,33 +590,41 @@ padding: 500px 0;
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .conscious-skill {
     padding: 48px 25px;
     background-color: #E0DCD8;
 }
+
 .conscious-skill_first {
     margin-bottom: 56px;
 }
+
 .conscious-skill p {
     max-width: 1116px;
     margin: 0 auto;
 }
+
 .conscious-skill_description3 a {
     color: #333;
 }
+
 .conscious-skill_description3 {
     font-size: 14px;
     line-height: 1.3;
 }
+
 .conscious-skill_title {
     font-size: 2.4rem;
     font-weight: 600;
     padding-bottom: 24px;
 }
+
 .conscious-skill_description {
     font-size: 2.0rem;
     padding-bottom: 16px;
 }
+
 .conscious-skill_description2 {
     padding-bottom: 16px;
 }
@@ -613,6 +644,7 @@ padding: 500px 0;
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .review-client {
     padding: 32px 0;
     display: flex;
@@ -621,38 +653,47 @@ padding: 500px 0;
     border: 1px solid #888;
     margin-bottom: 56px;
 }
+
 .review-client_last {
     margin-bottom: 0;
 }
+
 .review-client_leftbox {
     display: flex;
     flex-wrap: wrap;
 }
+
 .review-client_leftbox img {
     margin-right: 40px;
     margin-left: 16px;
     max-width: 299px;
 }
+
 .review-client_rightbox {
     max-width: 468px;
     margin-top: 32px;
     margin-right: 16px;
     margin-left: 16px;
 }
+
 .client_leftbox_title {
     font-size: 2.2rem;
     margin-bottom: 32px;
 }
+
 .client_leftbox_description a {
     color: #333;
     text-decoration: underline;
 }
+
 .client_leftbox {
     max-width: 300px;
 }
+
 .client_leftbox-btn img {
     margin-right: 0px;
 }
+
 .client_leftbox-btn {
     display: flex;
     justify-content: end;
@@ -663,34 +704,36 @@ padding: 500px 0;
     background-color: transparent;
     color: #333;
 }
+
 /* -----work----------------------------------------------- */
 
 /* 下から */
 
 /* 下から */
 
-.fadeUp{
-    animation-name:fadeUpAnime;
-    animation-duration:0.5s;
-    animation-fill-mode:forwards;
-    opacity:0;
-    }
-    
-    @keyframes fadeUpAnime{
-      from {
+.fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+    from {
         opacity: 0;
-      transform: translateY(100px);
-      }
-    
-      to {
-        opacity: 1;
-      transform: translateY(0);
-      }
+        transform: translateY(100px);
     }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 .section-work {
     padding: 120px 80px;
 }
+
 .section-work_top {
     display: flex;
     justify-content: space-evenly;
@@ -698,42 +741,52 @@ padding: 500px 0;
     max-width: 1040px;
     margin: 0 auto 64px auto;
 }
+
 .section-work_top img {
     max-width: 486px;
     height: auto;
 }
+
 .section-work_top-description {
     max-width: 720px;
 }
+
 .top-description_title {
     font-size: 2.0rem;
 }
+
 .top-description_url {
     margin-bottom: 24px;
 }
+
 .top-description_url a {
     color: #333;
     font-size: 1.4rem;
 }
+
 .section-work_top-description dd {
     margin-bottom: 24px;
 }
+
 .section-work_top-contents {
     max-width: 1040px;
     margin: 0 auto;
     text-align: center;
 }
-@media screen and (max-width: 923px)  {
-      .section-work_top-description {
+
+@media screen and (max-width: 923px) {
+    .section-work_top-description {
         margin-top: 32px;
-      }
-      .top-description_url {
+    }
+
+    .top-description_url {
         margin-bottom: 16px;
-      }
-      .section-work_top-description dd {
+    }
+
+    .section-work_top-description dd {
         margin-bottom: 16px;
-      }
-    
+    }
+
 }
 
 .work__sub-image {
@@ -743,113 +796,142 @@ padding: 500px 0;
     background-color: rgba(255, 207, 244, 0.5);
     overflow: hidden;
 }
+
 .work__sub-image img {
     width: 446px;
 }
+
 .work_process {
     margin-inline: auto;
     padding: 120px 25px;
     max-width: 1038px;
 }
-.work_process-title, .work_process-detail_section {
+
+.work_process-title,
+.work_process-detail_section {
     font-size: 2.4rem;
     font-weight: 600;
     margin-bottom: 16px;
 }
+
 .work_process-description {
     margin-bottom: 48px;
     font-size: 16px;
 }
+
 .work_process-detail1 {
     display: flex;
     justify-content: space-between;
 }
+
 .work_process-detail1-1 {
     margin-bottom: 16px;
 }
+
 .work_process-detail1_title {
     width: 130px;
     font-size: 1.8rem;
 }
+
 .work_process-detail1_description {
     width: 80%;
     max-width: 832px;
 }
+
 .work_process-detail1-2 {
     margin-bottom: 48px;
 }
+
 /* 企画書ボタン */
 a.btn_12 {
-	display: flex;
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
-	text-align: center;
-	text-decoration: none;
-	width: 200px;
-	margin: auto;
-	padding: 1.5rem 3rem 1.5rem 3rem;
+    text-align: center;
+    text-decoration: none;
+    width: 200px;
+    margin: auto;
+    padding: 1.5rem 3rem 1.5rem 3rem;
     font-size: 2.0rem;
-	background: #CDBFB1;
-	color: #333;
-	border-radius: 100vh;
-	position: relative;
-	transition: 0.5s;
+    background: #CDBFB1;
+    color: #333;
+    border-radius: 100vh;
+    position: relative;
+    transition: 0.5s;
 }
+
 a.btn_12:hover {
-	background: #515050;
-	color: #fff;
+    background: #515050;
+    color: #fff;
 }
 
 /* 情報設計 */
 .work_information-design {
     padding-top: 100px;
 }
+
 .work_information-design_title {
     text-align: center;
     font-size: 3.2rem;
     margin-bottom: 48px;
     display: flex;
-  align-items: center; /* 垂直中心 */
-  justify-content: center; /* 水平中心 */
+    align-items: center;
+    /* 垂直中心 */
+    justify-content: center;
+    /* 水平中心 */
 
 }
-.work_information-design_title:before, .work_information-design_title:after {
+
+.work_information-design_title:before,
+.work_information-design_title:after {
     border-top: 1px solid;
     border-color: #CDBFB1;
     content: "";
-    width: 166px /* 線の長さ */
-    }
-  
-  .work_information-design_title:before {
-    margin-right: 1em; /* 文字の右隣 */
-  }
-  .work_information-design_title:after {
-    margin-left: 1em; /* 文字の左隣 */
-  }
-  .work_information-title {
+    width: 166px
+        /* 線の長さ */
+}
+
+.work_information-design_title:before {
+    margin-right: 1em;
+    /* 文字の右隣 */
+}
+
+.work_information-design_title:after {
+    margin-left: 1em;
+    /* 文字の左隣 */
+}
+
+.work_information-title {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 16px;
-  }
-  .work_information-description {
+}
+
+.work_information-description {
     font-size: 16px;
 }
+
 .work_information-description img {
     width: 70%;
 }
+
 .work_information-description1 {
     margin-bottom: 48px;
 }
+
 .work_information-description a {
     color: #333;
 }
+
 .work__sub-image_second {
     background-color: rgba(255, 207, 244, 0.5);
     text-align: center;
 }
+
 .work__sub-image_second img {
     width: 70%;
 }
+
 .look-back {
     margin-inline: auto;
     padding: 120px 20px;
@@ -861,17 +943,20 @@ a.btn_12:hover {
     padding: 120px 80px;
     background-color: #515050;
 }
+
 .others_inner {
     margin-inline: auto;
     padding-inline: 40px;
     max-width: 1240px;
 }
+
 .others_inner-title {
     font-family: "Quiche Flare", serif;
     font-size: 2.4rem;
     margin-bottom: 48px;
     color: #FFF;
 }
+
 .others-works_list {
     display: flex;
     justify-content: center;
@@ -879,21 +964,24 @@ a.btn_12:hover {
     gap: 63px 30px;
     align-items: baseline;
 }
+
 .works-list__link {
     display: flex;
     flex-direction: column;
     color: var(--black);
     text-decoration: none;
 }
+
 .others-works_list-category {
     color: #E2DCDC;
     font-size: 1.4rem;
 }
+
 .others-works_list-item {
-    list-style:none
+    list-style: none
 }
+
 .works-list_title {
     color: #E2DCDC;
     font-size: 1.6rem;
 }
-
