@@ -7,11 +7,11 @@
 /*---Top------------------------*/
 
 .main-visual {
-    /* margin: 0; */
     position: absolute;
     top: 50%;
     transform: translate(100%, -50%)
 }
+
 
 .container {
     position: relative;
@@ -26,6 +26,7 @@
     font-size: 3.6rem;
     font-family: "Quiche Flare", serif;
     font-weight: 100;
+    padding-bottom: 25px;
 }
 
 .main-visual_name {
