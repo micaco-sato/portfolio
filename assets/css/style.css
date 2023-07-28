@@ -985,7 +985,9 @@ a.btn_12:hover {
 .others-works_list-item {
     list-style: none
 }
-
+.others-works_list-image img {
+    max-width: 264px;
+}
 .works-list_title {
     color: #E2DCDC;
     font-size: 1.6rem;
