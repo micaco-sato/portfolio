@@ -495,6 +495,9 @@ section {
     font-size: 3.2rem;
     font-weight: 500;
     padding-bottom: 64px;
+    background-image: url(../image/pc-images/Strength.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .section-profile_box {
     max-width: 1116px;
@@ -503,6 +506,7 @@ section {
 .section-profile_title {
     font-size: 2.4rem;
     padding-bottom: 16px;
+    font-weight: 600;
 }
 .profile_container-description {
     padding-bottom: 56px;
@@ -512,11 +516,10 @@ section {
 .section-profile_skill ul {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 }
 .section-profile_skill ul li {
     list-style: none;
-    padding: 0 40px;
+    padding: 0 20px;
 }
 .circle {
   text-align: center;

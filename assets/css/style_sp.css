@@ -135,24 +135,36 @@
         background-size: contain
     }
 
-    .profile__container {
-        padding: 80px 25px;
+    .profile_container {
+        padding: 80px 25px 40px;
         text-align: left;
     }
 
-    .profile__container h3 {
-        text-align: center;
+    .profile_container h3 {
+        font-size: 2.0rem;
+        padding-bottom: 48px;
+    }
+
+    .section-profile_title {
         font-size: 1.8rem;
     }
 
-    .section-profile_name {
-        font-size: 1.1rem;
-        text-align: center;
+    .profile_container-description {
+        padding-bottom: 40px;
+        font-size: 1.6rem;
+        line-height: 2.6rem;
     }
-
-    .profile__container-description {
-        font-size: 1.4rem;
-        line-height: 2.8rem;
+    .circle {
+        border: 0.5px solid #000000;
+    }
+    .circle p {
+        font-size: 1.6rem;
+    }
+    .section-profile_skill ul {
+        flex-wrap: wrap;
+    }
+    .section-profile_skill ul li {
+        padding: 0 20px 40px;
     }
 
     /* 経歴 */
