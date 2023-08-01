@@ -805,7 +805,6 @@ section {
 .section-work_top-contents {
     max-width: 1040px;
     margin: 0 auto;
-    text-align: center;
 }
 
 @media screen and (max-width: 923px) {
@@ -962,13 +961,17 @@ a.btn_12:hover {
     text-align: center;
 }
 
+.micaco-aoyama-portfolio {
+    background-color: rgba(81, 80, 80, 0.6);
+}
+
 .work__sub-image_second img {
     width: 70%;
 }
 
 .look-back {
     margin-inline: auto;
-    padding: 120px 20px;
+    padding: 120px 25px;
     max-width: 1038px;
 }
 
