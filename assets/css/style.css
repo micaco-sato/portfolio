@@ -912,8 +912,43 @@ a.btn_12:hover {
     /* 垂直中心 */
     justify-content: center;
     /* 水平中心 */
-
 }
+.work_information-design-box {
+    display: flex;
+    justify-content: flex-start;
+    width: 103%;
+    flex-wrap: wrap;
+}
+.design-box_contactsection {
+    padding: 40px 20px 0 0;
+    max-width: 515px;
+}
+.work_information-design_section-box {
+    display: flex;
+}
+.work_information-design_section-box dl {
+    width: 450px;
+}
+.work_information-design_left {
+    padding-left: 40px;
+}
+
+
+.design-box_shopsection {
+    padding-right: 20px;
+    max-width: 517px;
+}
+.design-box_profilesection {
+    max-width: 473px;
+}
+.design-box_topsection {
+    max-width: 415px;
+}
+.design-box_gallerysection {
+    max-width: 448px;
+}
+
+
 
 .work_information-design_title:before,
 .work_information-design_title:after {
@@ -956,6 +991,7 @@ a.btn_12:hover {
     color: #333;
 }
 
+
 .work__sub-image_second {
     background-color: rgba(255, 207, 244, 0.5);
     text-align: center;
@@ -973,6 +1009,61 @@ a.btn_12:hover {
     margin-inline: auto;
     padding: 120px 25px;
     max-width: 1038px;
+}
+.note-icon {
+    width: 264px;
+    padding-top: 16px;
+}
+@media screen and (max-width: 1013px) {
+    .work_information-design-box {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .design-box_profilesection {
+        padding-top: 40px;
+        max-width: 493px;
+    }
+    .design-box_shopsection {
+        padding: 0;
+    }
+    .design-box_contactsection {
+        padding-right: 0;
+    }
+    .work_information-design_section-box dl {
+        width: 100%;
+    }
+    .work_information-description1 {
+        margin-bottom: 32px;
+    }
+    .work_information-design_left {
+        padding-left: 0px;
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    .work_information-design_section-box {
+        display: block;
+        width: 100%;
+    }
+    .design-box_topsection {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+    .design-box_gallerysection {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+}
+.sp-work_information-design-box {
+    display: none;
+}
+.sp-design-box_topsection {
+    display: none;
+}
+.sp-design-box_gallerysection {
+    display: none;
 }
 
 /* その他 */

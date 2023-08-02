@@ -292,6 +292,30 @@
     }
 
     /* ---------work----------------------------------------- */
+    .sp-work_information-design-box {
+        display: block;
+        text-align: center;
+    }
+    .sp-design-box_topsection {
+        display: block;
+        max-width: 325px;
+    }
+    .sp-design-box_gallerysection {
+        display: block;
+        max-width: 325px;
+    }
+    .design-box_topsection {
+        display: none;
+    }
+    .design-box_gallerysection {
+        display: none;
+    }
+    .sp-work_information-design-box img {
+        max-width: 258px;
+    }
+    .work_information-design-box {
+        display: none;
+    }
 
     .section-work {
         padding: 80px 25px;
@@ -314,6 +338,10 @@
             max-width: 320px;
             height: auto;
         }
+    }
+
+    .work_information-design_section-box {
+        flex-wrap: wrap;
     }
 
     .work_process {
