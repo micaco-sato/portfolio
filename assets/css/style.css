@@ -870,6 +870,9 @@ section {
     width: 80%;
     max-width: 832px;
 }
+.work_process-detail1_keiko-iwasaki-website {
+    margin-bottom: 48px;
+}
 
 .work_process-detail1-2 {
     margin-bottom: 48px;
@@ -978,6 +981,17 @@ a.btn_12:hover {
 .work_information-description {
     font-size: 16px;
 }
+.work_information-description_keikoiwasaki {
+    margin-bottom: 32px;
+}
+.pc-keikoiwasaki-design-proposal {
+    display: block;
+    margin: 0 auto;
+    max-width: 809px;
+}
+.sp-keikoiwasaki-design-proposal {
+    display: none;
+}
 
 .work_information-description img {
     width: 70%;
@@ -999,6 +1013,9 @@ a.btn_12:hover {
 
 .micaco-aoyama-portfolio {
     background-color: rgba(81, 80, 80, 0.6);
+}
+.keiko-iwasaki-website {
+    background-color: rgba(255, 250, 199, 0.4);
 }
 
 .work__sub-image_second img {

@@ -332,6 +332,7 @@
     .section-work_top {
         margin: 0 auto 48px;
     }
+   
 
     @media screen and (max-width: 550px) {
         .section-work_top img {
@@ -417,5 +418,15 @@
 
     .others {
         padding: 80px 25px;
+    }
+}
+@media screen and (max-width: 907px) {
+    .sp-keikoiwasaki-design-proposal {
+        display: block;
+        margin: 0 auto;
+        max-width: 325px;
+    }
+    .pc-keikoiwasaki-design-proposal {
+        display: none;
     }
 }
