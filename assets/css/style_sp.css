@@ -130,13 +130,13 @@
     }
 
     .floatingContainer {
-        background-image: url(../image/sp-images/profile-MIKAKO\ AOYAMA.png), url(../image/sp-images/profile-AOYAMA.png);
+        background-image: url(../image/sp-images/profile-micaco.png), url(../image/sp-images/profile-sato.png);
         background-position: right 10% bottom 4%, top 6% left 10%;
         background-size: contain
     }
 
     .profile_container {
-        padding: 80px 25px 0px;
+        padding: 80px 25px;
         text-align: left;
     }
 

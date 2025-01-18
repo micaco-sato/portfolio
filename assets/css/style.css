@@ -447,7 +447,7 @@ section {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-image: url(../image/pc-images/profile-MIKAKO\ AOYAMA.png);
+    background-image: url(../image/pc-images/profile-MIKAKO\ Sato.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -455,7 +455,7 @@ section {
 
 @media screen and (max-width: 1300px) {
     .floatingContainer {
-        background-image: url(../image/pc-images/ipad_profile-MIKAKO\ AOYAMA.png);
+        background-image: url(../image/pc-images/ipad_profile-MIKAKO\ Sato.png);
     }
 }
 
@@ -488,7 +488,7 @@ section {
 
 /*profile*/
 .profile_container {
-    padding: 120px 80px 0;
+    padding: 120px 80px;
 }
 .profile_container h3 {
     text-align: center;
@@ -1012,7 +1012,7 @@ a.btn_12:hover {
     text-align: center;
 }
 
-.micaco-aoyama-portfolio {
+.micaco-sato-portfolio {
     background-color: rgba(81, 80, 80, 0.6);
 }
 .keiko-iwasaki-website {
