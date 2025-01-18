@@ -447,7 +447,7 @@ section {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-image: url(../image/pc-images/profile-MIKAKO\ Sato.png);
+    background-image: url(../image/pc-images/profile-micaco-sato.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -455,7 +455,7 @@ section {
 
 @media screen and (max-width: 1300px) {
     .floatingContainer {
-        background-image: url(../image/pc-images/ipad_profile-MIKAKO\ Sato.png);
+        background-image: url(../image/pc-images/ipad_profile-micaco-sato.png);
     }
 }
 
